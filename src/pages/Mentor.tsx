@@ -1,4 +1,6 @@
+import Card from "../components/ui/Card";
 import DropDown from "../components/ui/DropDown";
+import { mentors } from "../utils/mentors";
 
 const roleOptions = ["SE/SDE", "DS/AI/ML", "Product Management", "Project Management", "Consulting", "Quantitative Finance"];
 const companyOptions = ["FANG", "StartUps", "MNC's", "Others"];
@@ -31,6 +33,18 @@ const Mentor = () => {
                         <DropDown title="Slot" options={slotOptions} />
                         <DropDown title="Rating" options={ratingOptions} />
                     </div>
+                </div>
+
+                <div className="px-4 ">
+                    {
+                        mentors.map((item)=>(
+                            <div className="mt-2">
+
+                                <Card img={item.img} experience={item.experience} name={item.name} position={item.position}/>
+                            </div>
+                        ))
+                    }
+
                 </div>
             </div>
         </div>
