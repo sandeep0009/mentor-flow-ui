@@ -14,7 +14,7 @@ import {
       id: 1,
       name: "Mentor",
       icon: <GraduationCap size={20} />,
-      path: "/mentor",
+      path: "/",
     },
     {
       id: 2,

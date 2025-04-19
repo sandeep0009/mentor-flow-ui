@@ -11,7 +11,7 @@ function App() {
     <>
     <Layout>
       <Routes>
-        <Route path="/mentor" element={<Mentor/>}/>
+        <Route path="/" element={<Mentor/>}/>
       </Routes>
       
     </Layout>
