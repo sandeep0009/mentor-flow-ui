@@ -44,7 +44,7 @@ import {
       <div className="flex h-screen">
         <div
           className={`${
-            isCollapsed ? "w-16" : "w-64"
+            isCollapsed ? "w-16" : "w-48"
           } min-w-[4rem] bg-gray-100 border-r border-gray-300 transition-all duration-300 flex flex-col`}
         >
           <div className="flex justify-end p-2">
@@ -61,7 +61,7 @@ import {
               <Link
                 to={item.path}
                 key={item.id}
-                className={`flex items-center gap-3 px-4 py-2 hover:bg-gray-200 rounded-md transition ${
+                className={`flex items-center gap-3 p-6 hover:bg-gray-200 rounded-md transition ${
                   isCollapsed ? "justify-center" : "justify-start"
                 }`}
               >
@@ -71,8 +71,6 @@ import {
             ))}
           </div>
         </div>
-  
-        <div className="flex-1 p-4"></div>
       </div>
     );
   };
